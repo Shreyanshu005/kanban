@@ -37,7 +37,29 @@ The application uses Redux Toolkit for state management, implementing a centrali
 
 ### State Flow Diagram
 
-[Diagram will appear here]
+```mermaid
+graph TD
+    A[User Action] -->|Dispatch| B[Redux Action]
+    B --> C[Redux Thunk/Middleware]
+    C -->|Update Store| D[Redux Store]
+    D -->|Sync| E[Local Storage]
+    D -->|Subscribe| F[React Components]
+    F -->|Render| G[UI Update]
+    E -->|Load on Init| D
+    
+    subgraph "Board State"
+        H[Board Slice]
+        I[Columns]
+        J[Tasks]
+        K[Filters]
+        
+        H --> I
+        H --> J
+        H --> K
+    end
+    
+    D -->|State Tree| H
+```
 
 ### State Structure
 
