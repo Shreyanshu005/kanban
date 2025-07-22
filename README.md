@@ -149,22 +149,6 @@ interface Column {
    - Requires JavaScript enabled
    - Local storage must be enabled
 
-## 🔄 Future Improvements
-
-1. **State Management**
-   - Implement backend synchronization
-   - Add real-time collaboration support
-   - Migrate to a maintained drag-and-drop library
-   - Optimize history storage with differential updates
-
-2. **Features**
-   - Board sharing capabilities
-   - Activity history/audit log
-   - Advanced filtering and search
-   - Custom field support
-   - Configurable column colors
-   - Subtasks and checklists
-
 3. **Performance**
    - Implement virtual scrolling for large boards
    - Add service worker for offline support
