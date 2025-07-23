@@ -7,7 +7,7 @@ A modern, responsive Kanban board application built with Next.js, Redux Toolkit,
 1. **Clone the repository**
    ```bash
    git clone <repository-url>
-   cd trello-kanban-board
+   cd kanban
    ```
 
 2. **Install dependencies**
